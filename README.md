@@ -1,4 +1,4 @@
-#Implementation Summary
+# Implementation Summary
 The created website consists of 10 pages, consisting of a:
 
  - Home,
@@ -17,7 +17,7 @@ Within these pages, a number of CSS and JS features were implemented, such as
  - JS enabled SVG origami demonstration
  - Custom Carousel
 
-#Conclusion
+# Conclusion
 The website created was successful in providing the main functionality of the origami website as designed. Although lacking some aspects, such as additional origami bases, the functionality of these missing aspects are all demonstrated through other pages. I am happy with the website as a whole, and especially proud of the origami dog demonstration and simple fold transitions.
 
 Through completing this assignment I particularly learnt about, and tried to practice the concept of clean CSS. In a lot of past projects I have had a bad practice of debugging by putting in random CSS code, and when something works, leaving it. In this project I especially tried to clean up unnecessary CSS and ensure that if this source code was to be used in the future, styling could be applied to elements with a confidence that unintended changes to external elements was minimal.
