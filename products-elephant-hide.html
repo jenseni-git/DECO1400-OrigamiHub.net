@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--Products Page-->
+		<title>Elephant Hide OrigamiHub.net</title></title>
+		<!--font awesome-->
+		<script src="https://kit.fontawesome.com/f1991cfa02.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<script src="template-header.js"></script>
+			<div id="content">
+				<!--Insert content here-->
+				<div id="basesContainer" class="container">
+					<div class="section-title">Elephant Hide</div>
+					<div class="flex flex-wrap">
+						<div id="productPageLeft" class="flex-1 flex">
+							<div id="productCarousel" class="carousel">
+								<div id="productCarouselSlide1" class="carousel-slide product-slide">
+									<img class="max-w-100" src="images/products-elephant-hide-1.jpg" alt="Elephant Hide">
+								</div>
+								<div id="productCarouselSlide2" class="carousel-slide product-slide">
+									<img class="max-w-100" src="images/products-elephant-hide-2.jpg" alt="Elephant Hide">
+								</div>
+								<div id="productCarouselSlide3" class="carousel-slide product-slide">
+									<img class="max-w-100" src="images/products-elephant-hide-3.jpg" alt="Elephant Hide">
+								</div>
+								<a class="back" onclick="productPlusSlides(-1)">&#10094;</a>
+								<a class="forward" onclick="productPlusSlides(1)">&#10095;</a>
+							</div>
+						</div>
+						<div id="productPageText" class="flex-1 flex flex-column">
+							<p>Elephant Hide's composition makes it perfect for Wet Folding and Tesselations. It holds its shape well when folded, however is also easy to unfold. This paper's texture is unique, and is perfect for larger, round models such as flowers and animals.</br></br>
+							All pieces are about the thickness of printer paper, at around 100gsm.</br>
+							Check out our range of sizes and colours below.
+							</p>
+							<div id="productPageTextBottom" class="flex">
+								<p class="flex-1">From $10.99</p>
+								<div class="flex flex-column flex-1">
+									<select id="size-select" onchange="available()" name="size">
+										<option value="0" style="display: none" selected>Size</option>
+										<option value="1">20x20cm</option>
+										<option value="2">30x30cm</option>
+										<option value="3">40x40cm</option>
+									</select>
+									<select id="colour-select" onchange="available()" name="select">
+										<option value="0" style="display: none" selected>Colour</option>
+										<option value="1">Random</option>
+										<option value="2">Grey</option>
+										<option value="3">Light-brown</option>
+										<option value="4">Dark-brown</option>
+										<option value="5">Maroon</option>
+										<option value="6">Red</option>
+										<option value="7">Yellow</option>
+									</select>
+								</div>
+								<div class="flex flex-column flex-1">
+									<p id="checkAvailable" class="flex-1">Availability</p>
+									<p id="available" class="flex-1">Select an option</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<script src="template-footer.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+		<script>
+			var productSlidePosition = 1;
+			SlideShow(productSlidePosition, "product-slide");
+
+			// forward/Back controls
+			function productPlusSlides(n) {
+				SlideShow(productSlidePosition += n, "product-slide");
+			}
+			function SlideShow(n, c) {
+				var c = c.toString();
+				var slides = document.getElementsByClassName(c);
+				if (n > slides.length) {
+					productSlidePosition = 1;
+				}
+				if (n < 1) {
+					productSlidePosition = slides.length;
+				}
+				for (let i = 0; i < slides.length; i++) {
+					document.getElementsByClassName(c)[i].setAttribute("style","display: none;");
+				}
+				document.getElementsByClassName(c)[productSlidePosition-1].setAttribute("style","display: flex;");
+			}
+			
+			function available(){
+				console.log("hello");
+				if(document.getElementById("size-select").value !== "0" && document.getElementById("colour-select").value !== "0"){
+					if((parseInt(document.getElementById("size-select").value)+parseInt(document.getElementById("colour-select").value))%2 == 0){
+						document.getElementById("available").innerHTML = "In Stock";
+						document.getElementById("available").style.backgroundColor = "#62C370";
+					}
+					else{
+						document.getElementById("available").innerHTML = "Out of Stock";
+						document.getElementById("available").style.backgroundColor = "#FF0035";
+					}
+				}
+			}
+		</script>
+	</body>
+</html>
