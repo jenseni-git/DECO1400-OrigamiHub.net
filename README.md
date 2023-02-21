@@ -25,7 +25,9 @@ Through completing this assignment I particularly learnt about, and tried to pra
 This site could still be developed further, and a number of features ideated in the design were not included because of time constraints. Features like product filters, utilising Flexbox order and JavaScript sorting, or additional CSS transition base pages could be implemented.
 
 For more information about the design process, see the [Design Report](../Jensen_Iain_Website_Design_Report.pdf).
+
 For more information about the technical aspects of the product, see the [Website Implementation Report](../Jensen_Iain_Website_Implementation_Report.docx).
+
 The Website Implementation Report is provided as was submitted.
 
 The copyrights or trademarks of any origami designs, and/or images remain the owner/s' as referenced. Any infringements, please contact me, and I will take it down. This project was submitted for educational purposes.
