@@ -24,9 +24,9 @@ Through completing this assignment I particularly learnt about, and tried to pra
 
 This site could still be developed further, and a number of features ideated in the design were not included because of time constraints. Features like product filters, utilising Flexbox order and JavaScript sorting, or additional CSS transition base pages could be implemented.
 
-For more information about the design process, see the [Design Report](Jensen_Iain_Website_Design_Report.pdf).
+For more information about the design process, see the [Design Report](Documentation/Jensen_Iain_Website_Design_Report.pdf).
 
-For more information about the technical aspects of the product, see the [Website Implementation Report](Jensen_Iain_Website_Implementation_Report.docx).
+For more information about the technical aspects of the product, see the [Website Implementation Report](Documentation/Jensen_Iain_Website_Implementation_Report.docx).
 
 The Website Implementation Report is provided as was submitted.
 
